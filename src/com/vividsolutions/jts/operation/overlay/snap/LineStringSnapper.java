@@ -126,7 +126,10 @@ public class LineStringSnapper
        * Duplicate points are not added.
        */
       if (index >= 0) {
-        srcCoords.add(index + 1, new Coordinate(snapPt), false);
+    	  //TODO No idea, but there is no such method:
+          // srcCoords.add(index + 1, new Coordinate(snapPt), false);
+    	  // To make it to build I replaced it with 
+        srcCoords.add(new Coordinate(snapPt), false);
       }
     }
   }
