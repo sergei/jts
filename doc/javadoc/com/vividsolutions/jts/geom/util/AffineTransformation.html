@@ -96,7 +96,7 @@ java.lang.Object
 <DT>public class <B>AffineTransformation</B><DT>extends java.lang.Object<DT>implements java.lang.Cloneable, <A HREF="../../../../../com/vividsolutions/jts/geom/CoordinateSequenceFilter.html" title="interface in com.vividsolutions.jts.geom">CoordinateSequenceFilter</A></DL>
 
 <P>
-Represents a affine transformation on the 2D Cartesian plane. 
+Represents a affine transformation on the 2D Cartesian plane.
  It can be used to transform a <A HREF="../../../../../com/vividsolutions/jts/geom/Coordinate.html" title="class in com.vividsolutions.jts.geom"><CODE>Coordinate</CODE></A> or <A HREF="../../../../../com/vividsolutions/jts/geom/Geometry.html" title="class in com.vividsolutions.jts.geom"><CODE>Geometry</CODE></A>.
  An affine transformation is a mapping of the 2D plane into itself
  via a series of transformations of the following basic types:
@@ -105,12 +105,12 @@ Represents a affine transformation on the 2D Cartesian plane.
  <li>rotation (around the origin)
  <li>scaling (relative to the origin)
  <li>shearing (in both the X and Y directions)
- <li>translation 
+ <li>translation
  </ul>
  In general, affine transformations preserve straightness and parallel lines,
  but do not preserve distance or shape.
  <p>
- An affine transformation can be represented by a 3x3 
+ An affine transformation can be represented by a 3x3
  matrix in the following form:
  <blockquote><pre>
  T = | m00 m01 m02 |
@@ -131,15 +131,15 @@ Represents a affine transformation on the 2D Cartesian plane.
  A.compose(B) = T<sub>B</sub> x T<sub>A</sub>
  </pre></blockquote>
  This produces a transformation whose effect is that of A followed by B.
- Composition is computed via multiplication of the 
- The methods <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#reflect(double, double, double, double)"><CODE>reflect(double, double, double, double)</CODE></A>, <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#rotate(double)"><CODE>rotate(double)</CODE></A>, <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#scale(double, double)"><CODE>scale(double, double)</CODE></A>, <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#shear(double, double)"><CODE>shear(double, double)</CODE></A>, and <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#translate(double, double)"><CODE>translate(double, double)</CODE></A> 
+ Composition is computed via multiplication of the
+ The methods <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#reflect(double, double, double, double)"><CODE>reflect(double, double, double, double)</CODE></A>, <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#rotate(double)"><CODE>rotate(double)</CODE></A>, <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#scale(double, double)"><CODE>scale(double, double)</CODE></A>, <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#shear(double, double)"><CODE>shear(double, double)</CODE></A>, and <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#translate(double, double)"><CODE>translate(double, double)</CODE></A>
  have the effect of composing a transformation of that type with
- the transformation they are invoked on.  
+ the transformation they are invoked on.
  <p>
- Affine transformations may be invertible or non-invertible.  
- If a transformation is invertible, then there exists 
- an inverse transformation which when composed produces 
- the identity transformation.  
+ Affine transformations may be invertible or non-invertible.
+ If a transformation is invertible, then there exists
+ an inverse transformation which when composed produces
+ the identity transformation.
  The <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#getInverse()"><CODE>getInverse()</CODE></A> method
  computes the inverse of a transformation, if one exists.
 <P>
@@ -196,7 +196,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 <TD><CODE><B><A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#AffineTransformation(double[])">AffineTransformation</A></B>(double[]&nbsp;matrix)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new transformation whose 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new transformation whose
  matrix has the specified values.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -208,7 +208,7 @@ Represents a affine transformation on the 2D Cartesian plane.
                      double&nbsp;m12)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new transformation whose 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new transformation whose
  matrix has the specified values.</TD>
 </TR>
 </TABLE>
@@ -235,7 +235,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 <TD><CODE><B><A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#compose(com.vividsolutions.jts.geom.util.AffineTransformation)">compose</A></B>(<A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A>&nbsp;trans)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composes the given <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util"><CODE>AffineTransformation</CODE></A> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composes the given <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util"><CODE>AffineTransformation</CODE></A>
  with this transformation.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -244,7 +244,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 <TD><CODE><B><A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#composeBefore(com.vividsolutions.jts.geom.util.AffineTransformation)">composeBefore</A></B>(<A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A>&nbsp;trans)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composes this transformation 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Composes this transformation
  with the given <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util"><CODE>AffineTransformation</CODE></A>.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -255,7 +255,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tests if an object is an
  <tt>AffineTransformation</tt>
- and has the same matrix as 
+ and has the same matrix as
  this transformation.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -299,7 +299,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 <TD><CODE><B><A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html#isDone()">isDone</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reports that this filter should continue to be executed until 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reports that this filter should continue to be executed until
  all coordinates have been transformed.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -327,7 +327,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a reflection transformation composed 
+ to that of a reflection transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -340,7 +340,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a reflection transformation composed 
+ to that of a reflection transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -350,7 +350,7 @@ Represents a affine transformation on the 2D Cartesian plane.
                    double&nbsp;y)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a reflection about the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a reflection about the
  line (0,0) - (x,y).</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -362,7 +362,7 @@ Represents a affine transformation on the 2D Cartesian plane.
                    double&nbsp;y1)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a reflection about the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a reflection about the
  line (x0,y0) - (x1,y1).</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -372,7 +372,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a rotation transformation composed 
+ to that of a rotation transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -383,7 +383,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a rotation transformation composed 
+ to that of a rotation transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -393,7 +393,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a rotation
- about the origin 
+ about the origin
  by an angle <i>theta</i>.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -403,7 +403,7 @@ Represents a affine transformation on the 2D Cartesian plane.
                  double&nbsp;cosTheta)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a rotation 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a transformation for a rotation
  by an angle <i>theta</i>,
  specified by the sine and cosine of the angle.</TD>
 </TR>
@@ -415,7 +415,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a scale transformation composed 
+ to that of a scale transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -442,7 +442,7 @@ Represents a affine transformation on the 2D Cartesian plane.
                 double&nbsp;y)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this transformation to be a reflection 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this transformation to be a reflection
  about the line defined by vector (x,y).</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -474,7 +474,7 @@ Represents a affine transformation on the 2D Cartesian plane.
               double&nbsp;cosTheta)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this transformation to be a rotation 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this transformation to be a rotation
  by specifying the sin and cos of the rotation angle directly.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -533,7 +533,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a shear transformation composed 
+ to that of a shear transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -582,7 +582,7 @@ Represents a affine transformation on the 2D Cartesian plane.
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the value of this transformation
- to that of a translation transformation composed 
+ to that of a translation transformation composed
  with the current value.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
@@ -635,7 +635,7 @@ AffineTransformation</H3>
 <PRE>
 public <B>AffineTransformation</B>(double[]&nbsp;matrix)</PRE>
 <DL>
-<DD>Constructs a new transformation whose 
+<DD>Constructs a new transformation whose
  matrix has the specified values.
 <P>
 <DT><B>Parameters:</B><DD><CODE>matrix</CODE> - an array containing the 6 values { m00, m01, m02, m10, m11, m12 }
@@ -654,7 +654,7 @@ public <B>AffineTransformation</B>(double&nbsp;m00,
                             double&nbsp;m11,
                             double&nbsp;m12)</PRE>
 <DL>
-<DD>Constructs a new transformation whose 
+<DD>Constructs a new transformation whose
  matrix has the specified values.
 <P>
 <DT><B>Parameters:</B><DD><CODE>m00</CODE> - the entry for the [0, 0] element in the transformation matrix<DD><CODE>m01</CODE> - the entry for the [0, 1] element in the transformation matrix<DD><CODE>m02</CODE> - the entry for the [0, 2] element in the transformation matrix<DD><CODE>m10</CODE> - the entry for the [1, 0] element in the transformation matrix<DD><CODE>m11</CODE> - the entry for the [1, 1] element in the transformation matrix<DD><CODE>m12</CODE> - the entry for the [1, 2] element in the transformation matrix</DL>
@@ -705,7 +705,7 @@ public static <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTra
                                                       double&nbsp;x1,
                                                       double&nbsp;y1)</PRE>
 <DL>
-<DD>Creates a transformation for a reflection about the 
+<DD>Creates a transformation for a reflection about the
  line (x0,y0) - (x1,y1).
 <P>
 <DD><DL>
@@ -724,7 +724,7 @@ reflectionInstance</H3>
 public static <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>reflectionInstance</B>(double&nbsp;x,
                                                       double&nbsp;y)</PRE>
 <DL>
-<DD>Creates a transformation for a reflection about the 
+<DD>Creates a transformation for a reflection about the
  line (0,0) - (x,y).
 <P>
 <DD><DL>
@@ -743,9 +743,9 @@ rotationInstance</H3>
 public static <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>rotationInstance</B>(double&nbsp;theta)</PRE>
 <DL>
 <DD>Creates a transformation for a rotation
- about the origin 
+ about the origin
  by an angle <i>theta</i>.
- Positive angles correspond to a rotation 
+ Positive angles correspond to a rotation
  in the counter-clockwise direction.
 <P>
 <DD><DL>
@@ -764,7 +764,7 @@ rotationInstance</H3>
 public static <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>rotationInstance</B>(double&nbsp;sinTheta,
                                                     double&nbsp;cosTheta)</PRE>
 <DL>
-<DD>Creates a transformation for a rotation 
+<DD>Creates a transformation for a rotation
  by an angle <i>theta</i>,
  specified by the sine and cosine of the angle.
  This allows providing exact values for sin(theta) and cos(theta)
@@ -915,15 +915,15 @@ getDeterminant</H3>
 <PRE>
 public double <B>getDeterminant</B>()</PRE>
 <DL>
-<DD>Computes the determinant of the transformation matrix. 
+<DD>Computes the determinant of the transformation matrix.
  The determinant is computed as:
  <blockquote><pre>
  | m00 m01 m02 |
  | m10 m11 m12 | = m00 * m11 - m01 * m10
  |  0   0   1  |
  </pre></blockquote>
- If the determinant is zero, 
- the transform is singular (not invertible), 
+ If the determinant is zero,
+ the transform is singular (not invertible),
  and operations which attempt to compute
  an inverse will throw a <tt>NoninvertibleTransformException</tt>.
 <P>
@@ -945,8 +945,8 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
 <DL>
 <DD>Computes the inverse of this transformation, if one
  exists.
- The inverse is the transformation which when 
- composed with this one produces the identity 
+ The inverse is the transformation which when
+ composed with this one produces the identity
  transformation.
  A transformation has an inverse if and only if it
  is not singular (i.e. its
@@ -956,13 +956,13 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
  If no inverse exists this method
  will throw a <tt>NoninvertibleTransformationException</tt>.
  <p>
- The matrix of the inverse is equal to the 
+ The matrix of the inverse is equal to the
  inverse of the matrix for the transformation.
  It is computed as follows:
- <blockquote><pre>  
-                 1    
- inverse(A)  =  ---   x  adjoint(A) 
-                det 
+ <blockquote><pre>
+                 1
+ inverse(A)  =  ---   x  adjoint(A)
+                det
 
 
              =   1       |  m11  -m01   m01*m12-m02*m11  |
@@ -1003,7 +1003,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
 </DL>
 </DD>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>x0</CODE> - <DD><CODE>y0</CODE> - <DD><CODE>x1</CODE> - <DD><CODE>y1</CODE> - 
+<DT><B>Parameters:</B><DD><CODE>x0</CODE> - <DD><CODE>y0</CODE> - <DD><CODE>x1</CODE> - <DD><CODE>y1</CODE> -
 <DT><B>Returns:</B><DD></DL>
 </DD>
 </DL>
@@ -1032,17 +1032,17 @@ setToReflection</H3>
 public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>setToReflection</B>(double&nbsp;x,
                                             double&nbsp;y)</PRE>
 <DL>
-<DD>Sets this transformation to be a reflection 
+<DD>Sets this transformation to be a reflection
  about the line defined by vector (x,y).
  The transformation for a reflection
  is computed by:
  <blockquote><pre>
- d = sqrt(x<sup>2</sup> + y<sup>2</sup>)  
+ d = sqrt(x<sup>2</sup> + y<sup>2</sup>)
  sin = x / d;
  cos = x / d;
- 
- T<sub>ref</sub> = T<sub>rot(sin, cos)</sub> x T<sub>scale(1, -1)</sub> x T<sub>rot(-sin, cos)</sub  
- </pre></blockquote>
+
+ T<sub>ref</sub> = T<sub>rot(sin, cos)</sub> x T<sub>scale(1, -1)</sub> x T<sub>rot(-sin, cos)</sub>
+</pre></blockquote>
 <P>
 <DD><DL>
 </DL>
@@ -1060,11 +1060,11 @@ setToRotation</H3>
 public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>setToRotation</B>(double&nbsp;sinTheta,
                                           double&nbsp;cosTheta)</PRE>
 <DL>
-<DD>Sets this transformation to be a rotation 
+<DD>Sets this transformation to be a rotation
  by specifying the sin and cos of the rotation angle directly.
  The transformation matrix for the rotation
  has the value:
- <blockquote><pre>  
+ <blockquote><pre>
  |  cosTheta  -sinTheta   0 |
  |  sinTheta   cosTheta   0 |
  |         0          0   1 |
@@ -1089,7 +1089,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
 <DD>Sets this transformation to be a scaling.
  The transformation matrix for a scale
  has the value:
- <blockquote><pre>  
+ <blockquote><pre>
  |  xScale      0  dx |
  |  1      yScale  dy |
  |  0           0   1 |
@@ -1112,16 +1112,16 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                        double&nbsp;yShear)</PRE>
 <DL>
 <DD>Sets this transformation to be a shear.
- The transformation matrix for a shear 
+ The transformation matrix for a shear
  has the value:
- <blockquote><pre>  
+ <blockquote><pre>
  |  1      xShear  0 |
  |  yShear      1  0 |
  |  0           0  1 |
- </pre></blockquote> 
- Note that a shear of (1, 1) is <i>not</i> 
+ </pre></blockquote>
+ Note that a shear of (1, 1) is <i>not</i>
  equal to shear(1, 0) composed with shear(0, 1).
- Instead, shear(1, 1) corresponds to a mapping onto the 
+ Instead, shear(1, 1) corresponds to a mapping onto the
  line x = y.
 <P>
 <DD><DL>
@@ -1143,7 +1143,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
 <DD>Sets this transformation to be a translation.
  For a translation by the vector (x, y)
  the transformation matrix has the value:
- <blockquote><pre>  
+ <blockquote><pre>
  |  1  0  dx |
  |  1  0  dy |
  |  0  0   1 |
@@ -1168,7 +1168,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                     double&nbsp;y1)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a reflection transformation composed 
+ to that of a reflection transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1188,7 +1188,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                     double&nbsp;y)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a reflection transformation composed 
+ to that of a reflection transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1207,7 +1207,7 @@ rotate</H3>
 public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>rotate</B>(double&nbsp;theta)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a rotation transformation composed 
+ to that of a rotation transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1227,7 +1227,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                    double&nbsp;cosTheta)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a rotation transformation composed 
+ to that of a rotation transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1247,7 +1247,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                   double&nbsp;yScale)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a scale transformation composed 
+ to that of a scale transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1267,7 +1267,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                   double&nbsp;yShear)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a shear transformation composed 
+ to that of a shear transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1287,7 +1287,7 @@ public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransforma
                                       double&nbsp;y)</PRE>
 <DL>
 <DD>Updates the value of this transformation
- to that of a translation transformation composed 
+ to that of a translation transformation composed
  with the current value.
 <P>
 <DD><DL>
@@ -1305,10 +1305,10 @@ compose</H3>
 <PRE>
 public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>compose</B>(<A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A>&nbsp;trans)</PRE>
 <DL>
-<DD>Composes the given <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util"><CODE>AffineTransformation</CODE></A> 
+<DD>Composes the given <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util"><CODE>AffineTransformation</CODE></A>
  with this transformation.
- This produces a transformation whose effect 
- is equal to applying this transformation 
+ This produces a transformation whose effect
+ is equal to applying this transformation
  followed by the argument transformation.
  Mathematically,
  <blockquote><pre>
@@ -1330,10 +1330,10 @@ composeBefore</H3>
 <PRE>
 public <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A> <B>composeBefore</B>(<A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util">AffineTransformation</A>&nbsp;trans)</PRE>
 <DL>
-<DD>Composes this transformation 
+<DD>Composes this transformation
  with the given <A HREF="../../../../../com/vividsolutions/jts/geom/util/AffineTransformation.html" title="class in com.vividsolutions.jts.geom.util"><CODE>AffineTransformation</CODE></A>.
- This produces a transformation whose effect 
- is equal to applying the argument transformation 
+ This produces a transformation whose effect
+ is equal to applying the argument transformation
  followed by this transformation.
  Mathematically,
  <blockquote><pre>
@@ -1433,7 +1433,7 @@ isDone</H3>
 <PRE>
 public boolean <B>isDone</B>()</PRE>
 <DL>
-<DD>Reports that this filter should continue to be executed until 
+<DD>Reports that this filter should continue to be executed until
  all coordinates have been transformed.
 <P>
 <DD><DL>
@@ -1470,7 +1470,7 @@ public boolean <B>equals</B>(java.lang.Object&nbsp;obj)</PRE>
 <DL>
 <DD>Tests if an object is an
  <tt>AffineTransformation</tt>
- and has the same matrix as 
+ and has the same matrix as
  this transformation.
 <P>
 <DD><DL>
