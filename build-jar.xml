@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse.ant.import?>
+
+<project basedir="." default="buildjar" name="buildjar">
+    <target name="buildjar" depends="build">
+     <!-- Build the jar file -->
+	  <jar destfile="../../acpl/ibus/libs/jts.jar">
+	    <fileset dir="bin/" 
+	        includes="com/vividsolutions/jts/algorithm/ com/vividsolutions/jts/geom/ com/vividsolutions/jts/util/ com/vividsolutions/jts/operation/**"  />
+	  </jar>
+    </target>
+
+</project> 
+
